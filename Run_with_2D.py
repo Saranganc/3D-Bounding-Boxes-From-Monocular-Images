@@ -99,6 +99,7 @@ def main():
 
     for id in range(num_frames):
         ret, frame = video_in.read()
+        start_time = time.time()
         img_file = img_path + str(id) + ".png"
 
         # Read in image and make copy
